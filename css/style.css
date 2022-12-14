@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+html, body, header, main, div, section, nav, ul, li, h1, h2, p, span, button, a, input {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.container {
+    margin: 0 115px;
+}
+
+header {
+    height: 70px;
+    box-shadow: 0px 4px 30px -10px #00000040;
+    margin-bottom: 50px;
+}
+
+header div {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div h1 {
+    font-size: 1.9em;
+    font-weight: 700;
+    color: #292929;
+}
+
+header div nav button{
+    margin-left: 28px;
+    font-size: 1em;
+    font-weight: 400;
+    background-color: #fff;
+    color: #242424;
+}
+
+.vitrine ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+.vitrine ul li {
+    width: 290px;
+    height: 408px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid #F5F5F5;
+    margin-bottom: 22px;
+    transition: 0.3s;
+}
+
+.vitrine ul li:hover {
+    border: 2px solid #2E245E;
+}
+
+.vitrine ul li img {
+    width: 100%;
+    height: 35%;
+    object-fit: contain;
+    background-color: #F5F5F5;
+}
+
+.vitrine ul li .tag {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    background-color: #2E245E;
+    color: #fff;
+}
+
+.vitrine ul li h2 {
+    margin: 10px;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: #292929;
+}
+
+.vitrine ul li p:last-of-type {
+    font-size: 0.9em;
+    line-height: 1.4em;
+    margin: 10px;
+}
+
+.vitrine ul li span {
+    margin: 10px;
+    font-size: 1em;
+    font-weight: 600;
+    color: #2E245E;
+}
+
+.vitrine ul li button {
+    margin: 10px;
+    background-color: #fff;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.underline::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: #2E245E;
+    transition: 0.3s;
+    opacity: 0;
+}
+
+.vitrine ul li button:hover {
+    transition: 0.4s;
+    color: #2E245E;
+}
+
+.underline:hover::after {
+    opacity: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.lateral {
+    margin-left: 40px;
+}
+.pesquisa {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 25px;
+}
+
+.pesquisa input {
+    background-color: #F5F5F5;
+    font-size: 1em;
+    padding: 15px 20px;
+    border: 2px solid transparent;
+}
+
+.pesquisa input::placeholder {
+    color: #242424;
+}
+
+.pesquisa input:hover {
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.pesquisa button {
+    font-size: 1em;
+    padding: 15px 20px;
+    background-color: #2E245E;
+    color: #fff;
+    margin-left: 10px;
+    border: 2px solid transparent;
+}
+
+.pesquisa button:hover {
+    border-color: #000000;
+}
+
+.carrinho {
+    display: flex;
+    flex-direction: column;
+}
+
+.carrinho > h2 {
+    background-color: #37268C;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.carrinho ul {
+    max-height: 330px;
+    background-color: #F5F5F5;
+    padding-top: 20px;
+    overflow-y: auto;
+}
+
+.carrinho ul li {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 5px 20px 15px;
+}
+
+.carrinho ul li img {
+    width: 92px;
+    height: 100px;
+    background-color: #fff;
+}
+
+.carrinho ul li .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-left: 20px;
+}
+
+.carrinho ul li .texto h2 {
+    font-size: 1em;
+    font-weight: 700;
+    color: #333333;
+}
+
+.carrinho ul li .texto span {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #2E245E;
+}
+
+.carrinho ul li .texto button {
+    background-color: #F5F5F5;
+    color: #242424;
+    font-size: 0.9em;
+    padding: 0px;
+}
+
+.carrinho ul li .texto button:hover {
+    color: #cc3535;
+}
+
+.resumoCarrinho {
+    background-color: #292929;
+    color: #fff;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+
+.resumoCarrinho p {
+    font-weight: 600;
+}
+
+.resumoCarrinho .quantidade {
+    display: flex;
+    justify-content: space-between;
+}
+
+.resumoCarrinho .total {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carrinhoVazio {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    line-height: 25px;
+}
+
+.carrinhoVazio:first-of-type {
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-top: 70px;
+}
+
+.carrinhoVazio:last-of-type {
+    padding-bottom: 70px;
+}
+
+.ocultar {
+    display: none;
+}
+
+.ativo {
+    font-weight: 600;
+}

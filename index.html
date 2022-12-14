@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weartake</title>
+    <link rel="shortcut icon" href="./img/favicon.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/database.js"></script>
+    <script defer src="./js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Weartake</h1>
+            <nav>
+                <button id="todos" class="underline ativo">Todos</button>
+                <button id="acessorios" class="underline">Acessórios</button>
+                <button id="calcados" class="underline">Calçados</button>
+                <button id="camisetas" class="underline">Camisetas</button>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <section class="vitrine">
+            <ul></ul>
+        </section>
+        <section class="lateral">
+            <div class="pesquisa">
+                <input type="text" placeholder="Digite aqui sua pesquisa">
+                <button>Pesquisar</button>
+            </div>
+            <div class="carrinho">
+                <h2>Carrinho de compras</h2>
+                <ul></ul>
+                <p class="carrinhoVazio">Carrinho Vazio</p>
+                <p class="carrinhoVazio">Adicione Itens</p>
+                <div class="resumoCarrinho ocultar">
+                    <div class="quantidade">
+                        <p>Quantidade:</p>
+                        <span>0</span>
+                    </div>
+                    <div class="total">
+                        <p>Total:</p>
+                        <span>0</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
